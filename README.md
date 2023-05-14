@@ -10,7 +10,21 @@ To install the app on your local system, follow these steps:
 1. Clone the repository to your local machine:
   git clone https://github.com/DanielH987/DjangoBookApp.git
 2. Navigate to the project directory:
-  cd <repository-name>
+  cd DjangoBookApp
 3. Create and activate a virtual environment:
   python -m venv env
   source env/bin/activate
+4. Install the required packages:
+  pip install -r requirements.txt
+5. Migrate the database:
+  python manage.py migrate
+6. Create a superuser:
+  python manage.py createsuperuser
+7. Run the development server:
+  python manage.py runserver
+You can now access the app by visiting http://localhost:8000 in your web browser.
+# Features
+The app offers the following features:
+* View book details, including title, author, description, publoshing date, price (not real price)
+* Add books to database
+* Edit and delete books from the book list
