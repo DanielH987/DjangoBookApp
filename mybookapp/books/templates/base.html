@@ -1,0 +1,12 @@
+{% extends "rest_framework/base.html" %}
+
+{# Override this template in your own templates directory to customize #}
+
+{% block content %}
+    <h1>Welcome to my Django BookApp project!</h1>
+	<p>This is a web application that allows you to browse and manage books.</p>
+    <ul>
+        <li><a href="{% url 'book-list' %}">List of Books</a>, retrieve every book in our database or add your own</li>
+        <li><a href="{% url 'book-form' %}">Book Detail</a>, retrieve a single book</li>
+    </ul>
+{% endblock %}

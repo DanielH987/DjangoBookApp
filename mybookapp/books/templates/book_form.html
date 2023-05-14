@@ -1,0 +1,12 @@
+{% extends "rest_framework/base.html" %}
+
+{% block content %}
+  <h1>Book Detail</h1>
+  <p>Enter the ID of the Book you are looking for</p>
+
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+  </form>
+{% endblock %}
